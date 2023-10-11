@@ -1,0 +1,847 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D43C40F2AD510530019A132 /* MatrixMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C40E2AD510530019A132 /* MatrixMakerApp.swift */; };
+		5D43C4112AD510530019A132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C4102AD510530019A132 /* ContentView.swift */; };
+		5D43C4132AD510550019A132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4122AD510550019A132 /* Assets.xcassets */; };
+		5D43C4172AD510550019A132 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4162AD510550019A132 /* Preview Assets.xcassets */; };
+		5D43C4212AD510550019A132 /* MatrixMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C4202AD510550019A132 /* MatrixMakerTests.swift */; };
+		5D43C42B2AD510550019A132 /* MatrixMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C42A2AD510550019A132 /* MatrixMakerUITests.swift */; };
+		5D43C42D2AD510550019A132 /* MatrixMakerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C42C2AD510550019A132 /* MatrixMakerUITestsLaunchTests.swift */; };
+		5D43C43F2AD511CA0019A132 /* WindowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C43E2AD511CA0019A132 /* WindowDelegate.swift */; };
+		5D43C4412AD512970019A132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C4402AD512970019A132 /* AppDelegate.swift */; };
+		5D43C4432AD520BF0019A132 /* MainRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C4422AD520BF0019A132 /* MainRootView.swift */; };
+		5D43C4492AD521C80019A132 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C4482AD521C80019A132 /* HomeView.swift */; };
+		5D43C44B2AD521CC0019A132 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C44A2AD521CC0019A132 /* SettingView.swift */; };
+		5D43C44D2AD522B20019A132 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C44C2AD522B20019A132 /* Constants.swift */; };
+		5D43C4502AD523DC0019A132 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 5D43C44F2AD523DC0019A132 /* RswiftLibrary */; };
+		5D43C4522AD523DC0019A132 /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 5D43C4512AD523DC0019A132 /* rswift */; };
+		5D43C4692AD5246D0019A132 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4572AD5246B0019A132 /* NotoSansCJKkr-Medium.otf */; };
+		5D43C46A2AD5246D0019A132 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4582AD5246C0019A132 /* NotoSansCJKkr-Regular.otf */; };
+		5D43C46B2AD5246D0019A132 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4592AD5246C0019A132 /* Lato-Black.ttf */; };
+		5D43C46C2AD5246D0019A132 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C45A2AD5246C0019A132 /* Lato-BoldItalic.ttf */; };
+		5D43C46D2AD5246D0019A132 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C45B2AD5246C0019A132 /* Pretendard-Regular.otf */; };
+		5D43C46E2AD5246D0019A132 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C45C2AD5246C0019A132 /* NotoSansCJKkr-Bold.otf */; };
+		5D43C46F2AD5246D0019A132 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C45D2AD5246C0019A132 /* Lato-Thin.ttf */; };
+		5D43C4702AD5246D0019A132 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C45E2AD5246C0019A132 /* Lato-BlackItalic.ttf */; };
+		5D43C4712AD5246D0019A132 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C45F2AD5246C0019A132 /* Pretendard-SemiBold.otf */; };
+		5D43C4722AD5246D0019A132 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4602AD5246C0019A132 /* Lato-ThinItalic.ttf */; };
+		5D43C4732AD5246D0019A132 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4612AD5246C0019A132 /* Pretendard-Bold.otf */; };
+		5D43C4742AD5246D0019A132 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4622AD5246D0019A132 /* Lato-Bold.ttf */; };
+		5D43C4752AD5246D0019A132 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4632AD5246D0019A132 /* Pretendard-Medium.otf */; };
+		5D43C4762AD5246D0019A132 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4642AD5246D0019A132 /* Lato-LightItalic.ttf */; };
+		5D43C4772AD5246D0019A132 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4652AD5246D0019A132 /* Lato-Light.ttf */; };
+		5D43C4782AD5246D0019A132 /* NotoSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4662AD5246D0019A132 /* NotoSans-Bold.otf */; };
+		5D43C4792AD5246D0019A132 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4672AD5246D0019A132 /* Lato-Italic.ttf */; };
+		5D43C47A2AD5246D0019A132 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4682AD5246D0019A132 /* Lato-Regular.ttf */; };
+		5D43C47E2AD526180019A132 /* MatrixMakerResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C47D2AD526180019A132 /* MatrixMakerResources.swift */; };
+		5D43C4822AD533230019A132 /* SwiftUI+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C4812AD533230019A132 /* SwiftUI+Resources.swift */; };
+		5D43C4872AD534210019A132 /* SwiftUI+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C4862AD534210019A132 /* SwiftUI+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D43C41D2AD510550019A132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D43C4032AD510530019A132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D43C40A2AD510530019A132;
+			remoteInfo = MatrixMaker;
+		};
+		5D43C4272AD510550019A132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D43C4032AD510530019A132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D43C40A2AD510530019A132;
+			remoteInfo = MatrixMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D43C40B2AD510530019A132 /* MatrixMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D43C40E2AD510530019A132 /* MatrixMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMakerApp.swift; sourceTree = "<group>"; };
+		5D43C4102AD510530019A132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5D43C4122AD510550019A132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D43C4142AD510550019A132 /* MatrixMaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MatrixMaker.entitlements; sourceTree = "<group>"; };
+		5D43C4162AD510550019A132 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D43C41C2AD510550019A132 /* MatrixMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D43C4202AD510550019A132 /* MatrixMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMakerTests.swift; sourceTree = "<group>"; };
+		5D43C4262AD510550019A132 /* MatrixMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D43C42A2AD510550019A132 /* MatrixMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMakerUITests.swift; sourceTree = "<group>"; };
+		5D43C42C2AD510550019A132 /* MatrixMakerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMakerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5D43C43E2AD511CA0019A132 /* WindowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowDelegate.swift; sourceTree = "<group>"; };
+		5D43C4402AD512970019A132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D43C4422AD520BF0019A132 /* MainRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRootView.swift; sourceTree = "<group>"; };
+		5D43C4482AD521C80019A132 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5D43C44A2AD521CC0019A132 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		5D43C44C2AD522B20019A132 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5D43C4572AD5246B0019A132 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		5D43C4582AD5246C0019A132 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		5D43C4592AD5246C0019A132 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		5D43C45A2AD5246C0019A132 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5D43C45B2AD5246C0019A132 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		5D43C45C2AD5246C0019A132 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		5D43C45D2AD5246C0019A132 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		5D43C45E2AD5246C0019A132 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5D43C45F2AD5246C0019A132 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		5D43C4602AD5246C0019A132 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		5D43C4612AD5246C0019A132 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		5D43C4622AD5246D0019A132 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		5D43C4632AD5246D0019A132 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		5D43C4642AD5246D0019A132 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		5D43C4652AD5246D0019A132 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		5D43C4662AD5246D0019A132 /* NotoSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.otf"; sourceTree = "<group>"; };
+		5D43C4672AD5246D0019A132 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		5D43C4682AD5246D0019A132 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		5D43C47D2AD526180019A132 /* MatrixMakerResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMakerResources.swift; sourceTree = "<group>"; };
+		5D43C4812AD533230019A132 /* SwiftUI+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Resources.swift"; sourceTree = "<group>"; };
+		5D43C4862AD534210019A132 /* SwiftUI+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D43C4082AD510530019A132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D43C4502AD523DC0019A132 /* RswiftLibrary in Frameworks */,
+				5D43C4522AD523DC0019A132 /* rswift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D43C4192AD510550019A132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D43C4232AD510550019A132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D43C4022AD510530019A132 = {
+			isa = PBXGroup;
+			children = (
+				5D43C40D2AD510530019A132 /* MatrixMaker */,
+				5D43C41F2AD510550019A132 /* MatrixMakerTests */,
+				5D43C4292AD510550019A132 /* MatrixMakerUITests */,
+				5D43C40C2AD510530019A132 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D43C40C2AD510530019A132 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C40B2AD510530019A132 /* MatrixMaker.app */,
+				5D43C41C2AD510550019A132 /* MatrixMakerTests.xctest */,
+				5D43C4262AD510550019A132 /* MatrixMakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D43C40D2AD510530019A132 /* MatrixMaker */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C4142AD510550019A132 /* MatrixMaker.entitlements */,
+				5D43C43D2AD511BC0019A132 /* App */,
+				5D43C43C2AD511340019A132 /* Service */,
+				5D43C43B2AD511310019A132 /* Model */,
+				5D43C43A2AD511080019A132 /* Views */,
+				5D43C4842AD534120019A132 /* Extensions */,
+				5D43C4392AD510C00019A132 /* Resources */,
+			);
+			path = MatrixMaker;
+			sourceTree = "<group>";
+		};
+		5D43C4152AD510550019A132 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C4162AD510550019A132 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5D43C41F2AD510550019A132 /* MatrixMakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C4202AD510550019A132 /* MatrixMakerTests.swift */,
+			);
+			path = MatrixMakerTests;
+			sourceTree = "<group>";
+		};
+		5D43C4292AD510550019A132 /* MatrixMakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C42A2AD510550019A132 /* MatrixMakerUITests.swift */,
+				5D43C42C2AD510550019A132 /* MatrixMakerUITestsLaunchTests.swift */,
+			);
+			path = MatrixMakerUITests;
+			sourceTree = "<group>";
+		};
+		5D43C4392AD510C00019A132 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C4562AD5245F0019A132 /* Font */,
+				5D43C4122AD510550019A132 /* Assets.xcassets */,
+				5D43C4152AD510550019A132 /* Preview Content */,
+				5D43C47D2AD526180019A132 /* MatrixMakerResources.swift */,
+				5D43C4812AD533230019A132 /* SwiftUI+Resources.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5D43C43A2AD511080019A132 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C4422AD520BF0019A132 /* MainRootView.swift */,
+				5D43C4452AD521940019A132 /* Home */,
+				5D43C4472AD521B90019A132 /* Setting */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D43C43B2AD511310019A132 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D43C43C2AD511340019A132 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5D43C43D2AD511BC0019A132 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C44C2AD522B20019A132 /* Constants.swift */,
+				5D43C40E2AD510530019A132 /* MatrixMakerApp.swift */,
+				5D43C4102AD510530019A132 /* ContentView.swift */,
+				5D43C4402AD512970019A132 /* AppDelegate.swift */,
+				5D43C43E2AD511CA0019A132 /* WindowDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5D43C4452AD521940019A132 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C4482AD521C80019A132 /* HomeView.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		5D43C4472AD521B90019A132 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C44A2AD521CC0019A132 /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		5D43C4562AD5245F0019A132 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C4592AD5246C0019A132 /* Lato-Black.ttf */,
+				5D43C45E2AD5246C0019A132 /* Lato-BlackItalic.ttf */,
+				5D43C4622AD5246D0019A132 /* Lato-Bold.ttf */,
+				5D43C45A2AD5246C0019A132 /* Lato-BoldItalic.ttf */,
+				5D43C4672AD5246D0019A132 /* Lato-Italic.ttf */,
+				5D43C4652AD5246D0019A132 /* Lato-Light.ttf */,
+				5D43C4642AD5246D0019A132 /* Lato-LightItalic.ttf */,
+				5D43C4682AD5246D0019A132 /* Lato-Regular.ttf */,
+				5D43C45D2AD5246C0019A132 /* Lato-Thin.ttf */,
+				5D43C4602AD5246C0019A132 /* Lato-ThinItalic.ttf */,
+				5D43C4662AD5246D0019A132 /* NotoSans-Bold.otf */,
+				5D43C45C2AD5246C0019A132 /* NotoSansCJKkr-Bold.otf */,
+				5D43C4572AD5246B0019A132 /* NotoSansCJKkr-Medium.otf */,
+				5D43C4582AD5246C0019A132 /* NotoSansCJKkr-Regular.otf */,
+				5D43C4612AD5246C0019A132 /* Pretendard-Bold.otf */,
+				5D43C4632AD5246D0019A132 /* Pretendard-Medium.otf */,
+				5D43C45B2AD5246C0019A132 /* Pretendard-Regular.otf */,
+				5D43C45F2AD5246C0019A132 /* Pretendard-SemiBold.otf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		5D43C4842AD534120019A132 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C4862AD534210019A132 /* SwiftUI+Extension.swift */,
+			);
+			name = Extensions;
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D43C40A2AD510530019A132 /* MatrixMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D43C4302AD510550019A132 /* Build configuration list for PBXNativeTarget "MatrixMaker" */;
+			buildPhases = (
+				5D43C4072AD510530019A132 /* Sources */,
+				5D43C4082AD510530019A132 /* Frameworks */,
+				5D43C4092AD510530019A132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D43C4542AD523F80019A132 /* PBXTargetDependency */,
+			);
+			name = MatrixMaker;
+			packageProductDependencies = (
+				5D43C44F2AD523DC0019A132 /* RswiftLibrary */,
+				5D43C4512AD523DC0019A132 /* rswift */,
+			);
+			productName = MatrixMaker;
+			productReference = 5D43C40B2AD510530019A132 /* MatrixMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D43C41B2AD510550019A132 /* MatrixMakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D43C4332AD510550019A132 /* Build configuration list for PBXNativeTarget "MatrixMakerTests" */;
+			buildPhases = (
+				5D43C4182AD510550019A132 /* Sources */,
+				5D43C4192AD510550019A132 /* Frameworks */,
+				5D43C41A2AD510550019A132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D43C41E2AD510550019A132 /* PBXTargetDependency */,
+			);
+			name = MatrixMakerTests;
+			productName = MatrixMakerTests;
+			productReference = 5D43C41C2AD510550019A132 /* MatrixMakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5D43C4252AD510550019A132 /* MatrixMakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D43C4362AD510550019A132 /* Build configuration list for PBXNativeTarget "MatrixMakerUITests" */;
+			buildPhases = (
+				5D43C4222AD510550019A132 /* Sources */,
+				5D43C4232AD510550019A132 /* Frameworks */,
+				5D43C4242AD510550019A132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D43C4282AD510550019A132 /* PBXTargetDependency */,
+			);
+			name = MatrixMakerUITests;
+			productName = MatrixMakerUITests;
+			productReference = 5D43C4262AD510550019A132 /* MatrixMakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D43C4032AD510530019A132 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5D43C40A2AD510530019A132 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					5D43C41B2AD510550019A132 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 5D43C40A2AD510530019A132;
+					};
+					5D43C4252AD510550019A132 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 5D43C40A2AD510530019A132;
+					};
+				};
+			};
+			buildConfigurationList = 5D43C4062AD510530019A132 /* Build configuration list for PBXProject "MatrixMaker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D43C4022AD510530019A132;
+			packageReferences = (
+				5D43C44E2AD523DC0019A132 /* XCRemoteSwiftPackageReference "R" */,
+			);
+			productRefGroup = 5D43C40C2AD510530019A132 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D43C40A2AD510530019A132 /* MatrixMaker */,
+				5D43C41B2AD510550019A132 /* MatrixMakerTests */,
+				5D43C4252AD510550019A132 /* MatrixMakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D43C4092AD510530019A132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D43C4772AD5246D0019A132 /* Lato-Light.ttf in Resources */,
+				5D43C4732AD5246D0019A132 /* Pretendard-Bold.otf in Resources */,
+				5D43C4712AD5246D0019A132 /* Pretendard-SemiBold.otf in Resources */,
+				5D43C4782AD5246D0019A132 /* NotoSans-Bold.otf in Resources */,
+				5D43C4722AD5246D0019A132 /* Lato-ThinItalic.ttf in Resources */,
+				5D43C4172AD510550019A132 /* Preview Assets.xcassets in Resources */,
+				5D43C46F2AD5246D0019A132 /* Lato-Thin.ttf in Resources */,
+				5D43C47A2AD5246D0019A132 /* Lato-Regular.ttf in Resources */,
+				5D43C4702AD5246D0019A132 /* Lato-BlackItalic.ttf in Resources */,
+				5D43C46A2AD5246D0019A132 /* NotoSansCJKkr-Regular.otf in Resources */,
+				5D43C4742AD5246D0019A132 /* Lato-Bold.ttf in Resources */,
+				5D43C4132AD510550019A132 /* Assets.xcassets in Resources */,
+				5D43C4792AD5246D0019A132 /* Lato-Italic.ttf in Resources */,
+				5D43C46C2AD5246D0019A132 /* Lato-BoldItalic.ttf in Resources */,
+				5D43C46D2AD5246D0019A132 /* Pretendard-Regular.otf in Resources */,
+				5D43C4762AD5246D0019A132 /* Lato-LightItalic.ttf in Resources */,
+				5D43C4752AD5246D0019A132 /* Pretendard-Medium.otf in Resources */,
+				5D43C46E2AD5246D0019A132 /* NotoSansCJKkr-Bold.otf in Resources */,
+				5D43C46B2AD5246D0019A132 /* Lato-Black.ttf in Resources */,
+				5D43C4692AD5246D0019A132 /* NotoSansCJKkr-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D43C41A2AD510550019A132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D43C4242AD510550019A132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D43C4072AD510530019A132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D43C4412AD512970019A132 /* AppDelegate.swift in Sources */,
+				5D43C43F2AD511CA0019A132 /* WindowDelegate.swift in Sources */,
+				5D43C4872AD534210019A132 /* SwiftUI+Extension.swift in Sources */,
+				5D43C4112AD510530019A132 /* ContentView.swift in Sources */,
+				5D43C44B2AD521CC0019A132 /* SettingView.swift in Sources */,
+				5D43C4492AD521C80019A132 /* HomeView.swift in Sources */,
+				5D43C4432AD520BF0019A132 /* MainRootView.swift in Sources */,
+				5D43C47E2AD526180019A132 /* MatrixMakerResources.swift in Sources */,
+				5D43C40F2AD510530019A132 /* MatrixMakerApp.swift in Sources */,
+				5D43C44D2AD522B20019A132 /* Constants.swift in Sources */,
+				5D43C4822AD533230019A132 /* SwiftUI+Resources.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D43C4182AD510550019A132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D43C4212AD510550019A132 /* MatrixMakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D43C4222AD510550019A132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D43C42D2AD510550019A132 /* MatrixMakerUITestsLaunchTests.swift in Sources */,
+				5D43C42B2AD510550019A132 /* MatrixMakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D43C41E2AD510550019A132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D43C40A2AD510530019A132 /* MatrixMaker */;
+			targetProxy = 5D43C41D2AD510550019A132 /* PBXContainerItemProxy */;
+		};
+		5D43C4282AD510550019A132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D43C40A2AD510530019A132 /* MatrixMaker */;
+			targetProxy = 5D43C4272AD510550019A132 /* PBXContainerItemProxy */;
+		};
+		5D43C4542AD523F80019A132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5D43C4532AD523F80019A132 /* RswiftGenerateInternalResources */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5D43C42E2AD510550019A132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D43C42F2AD510550019A132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5D43C4312AD510550019A132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MatrixMaker/MatrixMaker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MatrixMaker/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = Y3SM86Y3Q4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ys.MatrixMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D43C4322AD510550019A132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MatrixMaker/MatrixMaker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MatrixMaker/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = Y3SM86Y3Q4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ys.MatrixMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5D43C4342AD510550019A132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3SM86Y3Q4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ys.MatrixMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MatrixMaker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MatrixMaker";
+			};
+			name = Debug;
+		};
+		5D43C4352AD510550019A132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3SM86Y3Q4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ys.MatrixMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MatrixMaker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MatrixMaker";
+			};
+			name = Release;
+		};
+		5D43C4372AD510550019A132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3SM86Y3Q4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ys.MatrixMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MatrixMaker;
+			};
+			name = Debug;
+		};
+		5D43C4382AD510550019A132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3SM86Y3Q4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ys.MatrixMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MatrixMaker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D43C4062AD510530019A132 /* Build configuration list for PBXProject "MatrixMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D43C42E2AD510550019A132 /* Debug */,
+				5D43C42F2AD510550019A132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D43C4302AD510550019A132 /* Build configuration list for PBXNativeTarget "MatrixMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D43C4312AD510550019A132 /* Debug */,
+				5D43C4322AD510550019A132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D43C4332AD510550019A132 /* Build configuration list for PBXNativeTarget "MatrixMakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D43C4342AD510550019A132 /* Debug */,
+				5D43C4352AD510550019A132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D43C4362AD510550019A132 /* Build configuration list for PBXNativeTarget "MatrixMakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D43C4372AD510550019A132 /* Debug */,
+				5D43C4382AD510550019A132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D43C44E2AD523DC0019A132 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D43C44F2AD523DC0019A132 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D43C44E2AD523DC0019A132 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		5D43C4512AD523DC0019A132 /* rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D43C44E2AD523DC0019A132 /* XCRemoteSwiftPackageReference "R" */;
+			productName = rswift;
+		};
+		5D43C4532AD523F80019A132 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5D43C4032AD510530019A132 /* Project object */;
+}
