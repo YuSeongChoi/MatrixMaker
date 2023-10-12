@@ -11,14 +11,30 @@ import RswiftResources
 
 struct HomeView: View {
     
-    
+    @StateObject private var viewModel = HomeViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            ForEach(viewModel.matrixList, id: \.self) { matrix in
+                NavigationLink {
+                    MatrixView(matrix: matrix)
+                        .navigationTitle("표 만들기")
+                } label: {
+                    HStack {
+                        Text(matrix.matrixName)
+                            .pretendSemiBold(size: 24)
+                        Spacer()
+                    }
+                }
+            }
+        }
+        .padding(.vertical, 10)
+        .padding(.horizontal, 22)
+        .onAppear {
+            if viewModel.matrixList.isEmpty {
+                viewModel.injectSampleData()
+            }
+        }
     }
     
-}
-
-#Preview {
-    HomeView()
 }

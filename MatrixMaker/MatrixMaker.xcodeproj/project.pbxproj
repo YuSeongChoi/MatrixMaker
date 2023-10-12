@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0066BB2AD65EB000DA4C07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D0066BA2AD65EB000DA4C07 /* GoogleService-Info.plist */; };
+		5D0066BF2AD65F9F00DA4C07 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5D0066BE2AD65F9F00DA4C07 /* FirebaseAnalytics */; };
+		5D0066C12AD65F9F00DA4C07 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5D0066C02AD65F9F00DA4C07 /* FirebaseDatabase */; };
+		5D0066C32AD65F9F00DA4C07 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5D0066C22AD65F9F00DA4C07 /* FirebaseStorage */; };
+		5D0066C62AD6703600DA4C07 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0066C52AD6703600DA4C07 /* Player.swift */; };
+		5D0066D12AD68AA400DA4C07 /* MatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0066D02AD68AA400DA4C07 /* MatrixView.swift */; };
+		5D0066D32AD68AE100DA4C07 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0066D22AD68AE100DA4C07 /* HomeViewModel.swift */; };
+		5D0066D52AD68FB000DA4C07 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0066D42AD68FB000DA4C07 /* Matrix.swift */; };
 		5D43C40F2AD510530019A132 /* MatrixMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C40E2AD510530019A132 /* MatrixMakerApp.swift */; };
 		5D43C4112AD510530019A132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C4102AD510530019A132 /* ContentView.swift */; };
 		5D43C4132AD510550019A132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D43C4122AD510550019A132 /* Assets.xcassets */; };
@@ -63,6 +71,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D0066BA2AD65EB000DA4C07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5D0066C52AD6703600DA4C07 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5D0066D02AD68AA400DA4C07 /* MatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixView.swift; sourceTree = "<group>"; };
+		5D0066D22AD68AE100DA4C07 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5D0066D42AD68FB000DA4C07 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		5D43C40B2AD510530019A132 /* MatrixMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D43C40E2AD510530019A132 /* MatrixMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMakerApp.swift; sourceTree = "<group>"; };
 		5D43C4102AD510530019A132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +123,9 @@
 			files = (
 				5D43C4502AD523DC0019A132 /* RswiftLibrary in Frameworks */,
 				5D43C4522AD523DC0019A132 /* rswift in Frameworks */,
+				5D0066C12AD65F9F00DA4C07 /* FirebaseDatabase in Frameworks */,
+				5D0066C32AD65F9F00DA4C07 /* FirebaseStorage in Frameworks */,
+				5D0066BF2AD65F9F00DA4C07 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +208,7 @@
 		5D43C4392AD510C00019A132 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5D0066BA2AD65EB000DA4C07 /* GoogleService-Info.plist */,
 				5D43C4562AD5245F0019A132 /* Font */,
 				5D43C4122AD510550019A132 /* Assets.xcassets */,
 				5D43C4152AD510550019A132 /* Preview Content */,
@@ -214,6 +231,8 @@
 		5D43C43B2AD511310019A132 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5D0066D42AD68FB000DA4C07 /* Matrix.swift */,
+				5D0066C52AD6703600DA4C07 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				5D43C4482AD521C80019A132 /* HomeView.swift */,
+				5D0066D22AD68AE100DA4C07 /* HomeViewModel.swift */,
+				5D0066D02AD68AA400DA4C07 /* MatrixView.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -307,6 +328,9 @@
 			packageProductDependencies = (
 				5D43C44F2AD523DC0019A132 /* RswiftLibrary */,
 				5D43C4512AD523DC0019A132 /* rswift */,
+				5D0066BE2AD65F9F00DA4C07 /* FirebaseAnalytics */,
+				5D0066C02AD65F9F00DA4C07 /* FirebaseDatabase */,
+				5D0066C22AD65F9F00DA4C07 /* FirebaseStorage */,
 			);
 			productName = MatrixMaker;
 			productReference = 5D43C40B2AD510530019A132 /* MatrixMaker.app */;
@@ -382,6 +406,7 @@
 			mainGroup = 5D43C4022AD510530019A132;
 			packageReferences = (
 				5D43C44E2AD523DC0019A132 /* XCRemoteSwiftPackageReference "R" */,
+				5D0066BD2AD65F9F00DA4C07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 5D43C40C2AD510530019A132 /* Products */;
 			projectDirPath = "";
@@ -419,6 +444,7 @@
 				5D43C46E2AD5246D0019A132 /* NotoSansCJKkr-Bold.otf in Resources */,
 				5D43C46B2AD5246D0019A132 /* Lato-Black.ttf in Resources */,
 				5D43C4692AD5246D0019A132 /* NotoSansCJKkr-Medium.otf in Resources */,
+				5D0066BB2AD65EB000DA4C07 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,12 +473,16 @@
 				5D43C43F2AD511CA0019A132 /* WindowDelegate.swift in Sources */,
 				5D43C4872AD534210019A132 /* SwiftUI+Extension.swift in Sources */,
 				5D43C4112AD510530019A132 /* ContentView.swift in Sources */,
+				5D0066C62AD6703600DA4C07 /* Player.swift in Sources */,
 				5D43C44B2AD521CC0019A132 /* SettingView.swift in Sources */,
 				5D43C4492AD521C80019A132 /* HomeView.swift in Sources */,
 				5D43C4432AD520BF0019A132 /* MainRootView.swift in Sources */,
 				5D43C47E2AD526180019A132 /* MatrixMakerResources.swift in Sources */,
 				5D43C40F2AD510530019A132 /* MatrixMakerApp.swift in Sources */,
+				5D0066D12AD68AA400DA4C07 /* MatrixView.swift in Sources */,
+				5D0066D52AD68FB000DA4C07 /* Matrix.swift in Sources */,
 				5D43C44D2AD522B20019A132 /* Constants.swift in Sources */,
+				5D0066D32AD68AE100DA4C07 /* HomeViewModel.swift in Sources */,
 				5D43C4822AD533230019A132 /* SwiftUI+Resources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -629,8 +659,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -639,7 +669,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ys.MatrixMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -667,8 +698,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -677,7 +708,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ys.MatrixMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -816,6 +848,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5D0066BD2AD65F9F00DA4C07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.16.0;
+			};
+		};
 		5D43C44E2AD523DC0019A132 /* XCRemoteSwiftPackageReference "R" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift";
@@ -827,6 +867,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5D0066BE2AD65F9F00DA4C07 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D0066BD2AD65F9F00DA4C07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		5D0066C02AD65F9F00DA4C07 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D0066BD2AD65F9F00DA4C07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		5D0066C22AD65F9F00DA4C07 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D0066BD2AD65F9F00DA4C07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
 		5D43C44F2AD523DC0019A132 /* RswiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5D43C44E2AD523DC0019A132 /* XCRemoteSwiftPackageReference "R" */;

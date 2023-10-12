@@ -23,9 +23,10 @@ struct MainRootView: View {
             SettingView()
                 .tag(TabItemType.setting)
                 .tabItem {
-                    Label("설정", systemImage: "person")
+                    Label("설정", systemImage: "gearshape")
                 }
         }
+        .tint(.black)
     }
     
 }
