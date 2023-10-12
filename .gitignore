@@ -2,4 +2,5 @@ R.generated.swift
 *.xcuserstate
 *.ipa
 *.log
+*.plist
 xcuserdata/
