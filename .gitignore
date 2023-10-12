@@ -1,0 +1,5 @@
+R.generated.swift
+*.xcuserstate
+*.ipa
+*.log
+xcuserdata/

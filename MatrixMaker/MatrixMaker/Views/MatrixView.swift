@@ -18,13 +18,13 @@ struct MatrixView: View {
             positionView
         }
         .onAppear {
-            // MARK: iOS16+ 뷰 전환 방식
+            // MARK: 기존 화면 전환
+//            let orientation = UIInterfaceOrientation.landscapeRight.rawValue
+//            UIDevice.current.setValue(orientation, forKey: "orientation")
+            // MARK: iOS 16+ 화면 전환
 //            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
 //            windowScene?.requestGeometryUpdate(.iOS(interfaceOrientations: .landscape))
             AppDelegate.orientationLock = .landscape
-        }
-        .onDisappear {
-            AppDelegate.orientationLock = .portrait
         }
     }
     
@@ -33,19 +33,19 @@ struct MatrixView: View {
         VStack {
             R.image.top.swiftImage
                 .resizable()
-                .frame(width: 36, height: 36)
+                .frame(width: 40, height: 40)
             R.image.jgl.swiftImage
                 .resizable()
-                .frame(width: 36, height: 36)
+                .frame(width: 40, height: 40)
             R.image.mid.swiftImage
                 .resizable()
-                .frame(width: 36, height: 36)
+                .frame(width: 40, height: 40)
             R.image.bot.swiftImage
                 .resizable()
-                .frame(width: 36, height: 36)
+                .frame(width: 40, height: 40)
             R.image.spt.swiftImage
                 .resizable()
-                .frame(width: 36, height: 36)
+                .frame(width: 40, height: 40)
         }
         .background(Color.gray.opacity(0.5))
     }

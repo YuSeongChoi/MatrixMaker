@@ -31,6 +31,7 @@ struct HomeView: View {
         .padding(.vertical, 10)
         .padding(.horizontal, 22)
         .onAppear {
+            AppDelegate.orientationLock = .portrait
             if viewModel.matrixList.isEmpty {
                 viewModel.injectSampleData()
             }
